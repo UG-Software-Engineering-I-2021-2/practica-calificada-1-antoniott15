@@ -1,6 +1,6 @@
 package libro;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Libro {
     private String autorNombre;
@@ -9,7 +9,8 @@ public class Libro {
     private String autorFechaNacimiento;
     private String identificador;
     private String status;
-    private Random rand = new Random();
+    private SecureRandom rand = new SecureRandom();
+
 
     public  Libro(String autorNombre,String autorFechaNacimiento, String anoPublication, String libroNombre) {
         this.autorNombre = autorNombre;
